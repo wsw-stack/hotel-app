@@ -1,16 +1,12 @@
 package com.lakeside.hotelbookingapp.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Entity
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookedRoom {
@@ -49,9 +45,5 @@ public class BookedRoom {
     public void setNumOfChildren(int numOfChildren) {
         this.numOfChildren = numOfChildren;
         calculateNumOfGuests();
-    }
-
-    public void setBookingConfirmationCode(String bookingConfirmationCode) {
-        this.bookingConfirmationCode = bookingConfirmationCode;
     }
 }
