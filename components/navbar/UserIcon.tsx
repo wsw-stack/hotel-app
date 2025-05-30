@@ -11,7 +11,7 @@ export default function UserIcon() {
     let cancelled = false;
     fetchProfileImage()
       .then((url) => {
-        if (!cancelled) setImage(url);
+        if (!cancelled && url) setImage(url);
       })
       .catch(console.error);
     return () => { cancelled = true; };    // 避免卸载后 setState
