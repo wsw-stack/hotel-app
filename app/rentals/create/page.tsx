@@ -7,7 +7,7 @@ import CategoriesInput from "@/components/form/CategoriesInput";
 import TextAreaInput from "@/components/form/TextAreaInput";
 import CountriesInput from "@/components/form/CountriesInput";
 import ImageInput from "@/components/form/ImageInput";
-import CounterInput from "@/components/form/CounerInput";
+import CounterInput from "@/components/form/CounterInput";
 import AmenitiesInput from "@/components/form/AmenitiesInput";
 
 const CreateProperty = () => {
